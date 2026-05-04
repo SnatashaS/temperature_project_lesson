@@ -1,6 +1,7 @@
 from random import randint
 
-def input_lst_temperature(lst_temp):
+def input_lst_temperature():
+    lst_temp = []
 
     month = int(input("Введите текущий номер месяца (1-12) -> "))
     year = int(input("Введите текущий год: "))
@@ -27,6 +28,8 @@ def input_lst_temperature(lst_temp):
         else:
             for _ in range(28):
                 lst_temp.append(randint(-30,0))
+    
+    return lst_temp
 
     
 def output_temperature_lst(lst_temp):
